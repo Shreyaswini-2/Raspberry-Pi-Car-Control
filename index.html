@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart IoT Car Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Smart IoT Car Control</h1>
+    <div class="car-container">
+        <img src="{{ url_for('static', filename='images/car.png') }}" alt="Car" id="car">
+    </div>
+    <div class="controls">
+        <button onclick="sendCommand('forward')">Move Forward</button>
+        <button onclick="sendCommand('backward')">Move Backward</button>
+        <button onclick="sendCommand('left')">Turn Left</button>
+        <button onclick="sendCommand('right')">Turn Right</button>
+        <button onclick="sendCommand('stop')">Stop</button>
+    </div>
+    <script src="{{ url_for('static', filename='javascript.js') }}"></script>
+</body>
+</html>

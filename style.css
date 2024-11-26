@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.controls button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3e8e41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #45a049;
+}
+
+.car-container {
+    position: relative;
+    margin: 50px auto;
+    height: 300px;
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.car-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+}
